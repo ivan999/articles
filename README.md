@@ -1,4 +1,4 @@
-# articles
+# Articles
 
 REST API for creating and reading articles. 
 Works with JSON. 
@@ -35,20 +35,20 @@ Requires authorization with JWT tokens.
     Content
 
 ## The article endpoints:
-  ## /article/create
+  ### /article/create
     Parses the JWT token from the HTTP header, creates a new article.
 
-  ## /article/update?id=?
+  ### /article/update?id=?
     Parses the JWT token from the HTTP header, updates the article.
 
-  ## /article/delete?id=?
+  ### /article/delete?id=?
     Parses the JWT token from the HTTP header, deletes the article.
 
-  ## /article?id=?
+  ### /article?id=?
     Gives the article by the article ID given in the query parameter.
 
-  ## /articles/headers?limit=?&offset=?
+  ### /articles/headers?limit=?&offset=?
     Gives article headers (part of the article structure without the content field) based on the limit and offset query parameters.
 
-  ## /articles/headers?userID=?
+  ### /articles/headers?userID=?
     Gives article headers based on the user ID query parameter.
